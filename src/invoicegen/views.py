@@ -138,7 +138,7 @@ def list_invoice(request):
 					line_ten_total_price = row.line_ten_total_price
 
 					total = row.total
-					pdf_file_name = 'C:/Users/umans/Desktop/BGH/' + str(invoice_number) + '_' + str(name) + '.pdf'
+					pdf_file_name = '' + str(invoice_number) + '_' + str(name) + '.pdf' #Enter the location of the directory where u want to store bills
 					generate_invoice(str(name), str(invoice_number), str(address),
 						str(line_one), str(line_one_quantity), str(line_one_unit_price), 
 						str(line_one_total_price), str(line_two), str(line_two_quantity),
@@ -172,7 +172,7 @@ def list_invoice(request):
 				c = canvas.Canvas(pdf_file_name)
 
 				# image of seal
-				logo = 'Bansal_glass_house.png'
+				logo = '' #enter the path of the logo file 
 				c.drawImage(logo, 50, 700, width=500, height=150)
 
 				c.setFont('Helvetica', 12, leading=None)
