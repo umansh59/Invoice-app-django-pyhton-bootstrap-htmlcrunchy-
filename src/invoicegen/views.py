@@ -17,7 +17,7 @@ import pandas as pd
 # Create your views here.
 @login_required
 def home(request):
-	title = 'Bansal Glass House'
+	title = '' #enter the title of the home page you want to show for example "Invoice App"
 	context = {
 	"title": title,
 	}
