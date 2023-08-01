@@ -18,3 +18,8 @@ python manage.py migrate
 
 to run the django server run command :
 python manage.py runserver 
+
+not working features 
+the recent invoices tab in the new invoice page you can also exclude completely its on preference
+the genrated invoice still prints none or 0 in the emppty fields 
+the no of fields is not dynamic atmost i can add 10 entries per bill 
