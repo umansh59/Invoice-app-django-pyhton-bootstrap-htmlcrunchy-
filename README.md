@@ -7,6 +7,10 @@
  install crunchy 
  install registration redux 
  install pandas 
+ intall crispy forms 
+ intall reportlab
+ intall crispy_bootstrap5
+ intall mysqlclient
 all the below commands will run in the location of manage.py in the src folder 
 To create a new  super user 
 run command : python manage.py createsuperuser 
